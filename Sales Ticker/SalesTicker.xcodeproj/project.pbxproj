@@ -1,0 +1,343 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0406C96017A0E1890023FF0E /* SalesTickerResultViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0406C95F17A0E1890023FF0E /* SalesTickerResultViewController.m */; };
+		041423C417A143FC004A0885 /* WebServiceOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 041423C317A143FC004A0885 /* WebServiceOperation.m */; };
+		04C6BBDE17A0D651008F692A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04C6BBDD17A0D651008F692A /* UIKit.framework */; };
+		04C6BBE017A0D651008F692A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04C6BBDF17A0D651008F692A /* Foundation.framework */; };
+		04C6BBE217A0D651008F692A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04C6BBE117A0D651008F692A /* CoreGraphics.framework */; };
+		04C6BBE817A0D651008F692A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 04C6BBE617A0D651008F692A /* InfoPlist.strings */; };
+		04C6BBEA17A0D651008F692A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 04C6BBE917A0D651008F692A /* main.m */; };
+		04C6BBEE17A0D651008F692A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 04C6BBED17A0D651008F692A /* AppDelegate.m */; };
+		04C6BBF117A0D651008F692A /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04C6BBEF17A0D651008F692A /* MainStoryboard.storyboard */; };
+		04C6BBF417A0D651008F692A /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04C6BBF317A0D651008F692A /* ViewController.m */; };
+		04C6BC0317A0DAF0008F692A /* logo2.png in Resources */ = {isa = PBXBuildFile; fileRef = 04C6BC0217A0DAF0008F692A /* logo2.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		0406C95E17A0E1890023FF0E /* SalesTickerResultViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SalesTickerResultViewController.h; sourceTree = "<group>"; };
+		0406C95F17A0E1890023FF0E /* SalesTickerResultViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SalesTickerResultViewController.m; sourceTree = "<group>"; };
+		041423C217A143FC004A0885 /* WebServiceOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebServiceOperation.h; sourceTree = "<group>"; };
+		041423C317A143FC004A0885 /* WebServiceOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WebServiceOperation.m; sourceTree = "<group>"; };
+		041423C617A1450D004A0885 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		04C6BBD917A0D651008F692A /* SalesTicker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SalesTicker.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		04C6BBDD17A0D651008F692A /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		04C6BBDF17A0D651008F692A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		04C6BBE117A0D651008F692A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		04C6BBE517A0D651008F692A /* SalesTicker-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SalesTicker-Info.plist"; sourceTree = "<group>"; };
+		04C6BBE717A0D651008F692A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		04C6BBE917A0D651008F692A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		04C6BBEB17A0D651008F692A /* SalesTicker-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SalesTicker-Prefix.pch"; sourceTree = "<group>"; };
+		04C6BBEC17A0D651008F692A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		04C6BBED17A0D651008F692A /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		04C6BBF017A0D651008F692A /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
+		04C6BBF317A0D651008F692A /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		04C6BC0217A0DAF0008F692A /* logo2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo2.png; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		04C6BBD617A0D651008F692A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				04C6BBDE17A0D651008F692A /* UIKit.framework in Frameworks */,
+				04C6BBE017A0D651008F692A /* Foundation.framework in Frameworks */,
+				04C6BBE217A0D651008F692A /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		04C6BBCE17A0D651008F692A = {
+			isa = PBXGroup;
+			children = (
+				04C6BBE317A0D651008F692A /* SalesTicker */,
+				04C6BBDC17A0D651008F692A /* Frameworks */,
+				04C6BBDA17A0D651008F692A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		04C6BBDA17A0D651008F692A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				04C6BBD917A0D651008F692A /* SalesTicker.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		04C6BBDC17A0D651008F692A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				04C6BBDD17A0D651008F692A /* UIKit.framework */,
+				04C6BBDF17A0D651008F692A /* Foundation.framework */,
+				04C6BBE117A0D651008F692A /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		04C6BBE317A0D651008F692A /* SalesTicker */ = {
+			isa = PBXGroup;
+			children = (
+				04C6BBEC17A0D651008F692A /* AppDelegate.h */,
+				04C6BBED17A0D651008F692A /* AppDelegate.m */,
+				04C6BBEF17A0D651008F692A /* MainStoryboard.storyboard */,
+				041423C217A143FC004A0885 /* WebServiceOperation.h */,
+				041423C317A143FC004A0885 /* WebServiceOperation.m */,
+				041423C617A1450D004A0885 /* ViewController.h */,
+				04C6BBF317A0D651008F692A /* ViewController.m */,
+				0406C95E17A0E1890023FF0E /* SalesTickerResultViewController.h */,
+				0406C95F17A0E1890023FF0E /* SalesTickerResultViewController.m */,
+				04C6BC0217A0DAF0008F692A /* logo2.png */,
+				04C6BBE417A0D651008F692A /* Supporting Files */,
+			);
+			path = SalesTicker;
+			sourceTree = "<group>";
+		};
+		04C6BBE417A0D651008F692A /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				04C6BBE517A0D651008F692A /* SalesTicker-Info.plist */,
+				04C6BBE617A0D651008F692A /* InfoPlist.strings */,
+				04C6BBE917A0D651008F692A /* main.m */,
+				04C6BBEB17A0D651008F692A /* SalesTicker-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		04C6BBD817A0D651008F692A /* SalesTicker */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 04C6BBF717A0D651008F692A /* Build configuration list for PBXNativeTarget "SalesTicker" */;
+			buildPhases = (
+				04C6BBD517A0D651008F692A /* Sources */,
+				04C6BBD617A0D651008F692A /* Frameworks */,
+				04C6BBD717A0D651008F692A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SalesTicker;
+			productName = SalesTicker;
+			productReference = 04C6BBD917A0D651008F692A /* SalesTicker.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		04C6BBD017A0D651008F692A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0420;
+			};
+			buildConfigurationList = 04C6BBD317A0D651008F692A /* Build configuration list for PBXProject "SalesTicker" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 04C6BBCE17A0D651008F692A;
+			productRefGroup = 04C6BBDA17A0D651008F692A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				04C6BBD817A0D651008F692A /* SalesTicker */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		04C6BBD717A0D651008F692A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				04C6BBE817A0D651008F692A /* InfoPlist.strings in Resources */,
+				04C6BBF117A0D651008F692A /* MainStoryboard.storyboard in Resources */,
+				04C6BC0317A0DAF0008F692A /* logo2.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		04C6BBD517A0D651008F692A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				04C6BBEA17A0D651008F692A /* main.m in Sources */,
+				04C6BBEE17A0D651008F692A /* AppDelegate.m in Sources */,
+				04C6BBF417A0D651008F692A /* ViewController.m in Sources */,
+				0406C96017A0E1890023FF0E /* SalesTickerResultViewController.m in Sources */,
+				041423C417A143FC004A0885 /* WebServiceOperation.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		04C6BBE617A0D651008F692A /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				04C6BBE717A0D651008F692A /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		04C6BBEF17A0D651008F692A /* MainStoryboard.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				04C6BBF017A0D651008F692A /* en */,
+			);
+			name = MainStoryboard.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		0413E5BA17BB3DCD00222BFD /* AdHoc */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = AdHoc;
+		};
+		0413E5BB17BB3DCD00222BFD /* AdHoc */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Venkata Chinni (YPV5WQ7WU7)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Venkata Chinni (YPV5WQ7WU7)";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SalesTicker/SalesTicker-Prefix.pch";
+				INFOPLIST_FILE = "SalesTicker/SalesTicker-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "6B95A65D-9D97-479F-8CF0-6E3F45484BFF";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "6B95A65D-9D97-479F-8CF0-6E3F45484BFF";
+				WRAPPER_EXTENSION = app;
+			};
+			name = AdHoc;
+		};
+		04C6BBF517A0D651008F692A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		04C6BBF617A0D651008F692A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		04C6BBF817A0D651008F692A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer: Venkata Chinni (X3YTG34K52)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Venkata Chinni (X3YTG34K52)";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SalesTicker/SalesTicker-Prefix.pch";
+				INFOPLIST_FILE = "SalesTicker/SalesTicker-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "76A3238D-14F9-442A-9E3A-CEA519FF081F";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "76A3238D-14F9-442A-9E3A-CEA519FF081F";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		04C6BBF917A0D651008F692A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Venkata Chinni (YPV5WQ7WU7)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Venkata Chinni (YPV5WQ7WU7)";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SalesTicker/SalesTicker-Prefix.pch";
+				INFOPLIST_FILE = "SalesTicker/SalesTicker-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "6B95A65D-9D97-479F-8CF0-6E3F45484BFF";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "6B95A65D-9D97-479F-8CF0-6E3F45484BFF";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		04C6BBD317A0D651008F692A /* Build configuration list for PBXProject "SalesTicker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				04C6BBF517A0D651008F692A /* Debug */,
+				04C6BBF617A0D651008F692A /* Release */,
+				0413E5BA17BB3DCD00222BFD /* AdHoc */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		04C6BBF717A0D651008F692A /* Build configuration list for PBXNativeTarget "SalesTicker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				04C6BBF817A0D651008F692A /* Debug */,
+				04C6BBF917A0D651008F692A /* Release */,
+				0413E5BB17BB3DCD00222BFD /* AdHoc */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 04C6BBD017A0D651008F692A /* Project object */;
+}

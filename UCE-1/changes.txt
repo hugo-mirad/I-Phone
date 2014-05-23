@@ -1,0 +1,41 @@
+25-7
+
+replaced delegate protocol with notifications in CustomTable
+
+30-7
+replaced didFailWithObjects method with notif method
+-
+removed properties for indexset1,2,3,4
+
+1-8
+changed if & else if conditions in scrollview method
+
+renamed lowestpagenuminmemory property
+-
+disabled deleting from top code-when scrolling bottom. Working fine, even there is no jitter in loading when scrolling fast
+-
+added deleting from top code when user scrolls bottom. Working fine, even no jitter when scrolling slowly. However, if user scrolls fast, jitter is comming & more than 5 pages of data is maintained. don't know why.
+
+2-8
+added ![NSThread isMainThread]) in notifs where missing in customTable
+
+added setEditing:YES , NO when tableview begin, end updates. corrected deleting from last page by adjusting logic for self.lastpagecellscount
+-
+Searchresultsviewcontroller:
+modified logic for self.operationStarted and other general scrolling logic as in custome table.
+
+added setnetworkacitivityindicatorvisible:yes in viewdidload before showing activityviewer
+
+3-8
+modified scrolling logic, self.operationStarted logic in preference results as in customtable.
+
+
+12-8
+added default view as thumbnail view for gallery from detailview and mylistdetailview
+
+-
+rearranged method definitions in customtable
+
+reverted the default view in gallery to individual cars at start
+--------
+when server error is comming after some results are retrieved, it is popping back to search view. instead it should not popup and keep the retreived results as it is. - not tested fully

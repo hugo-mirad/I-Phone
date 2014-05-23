@@ -1,0 +1,266 @@
+
+18-11
+trying uicollectionviewcontroller for searchview. working fine for static strings: using http://www.raywenderlich.com/22324, http://www.cocoanetics.com/2013/08/variable-sized-items-in-uicollectionview/
+-
+started replacing SearchViewForModels
+
+19-11
+completed FindACar Flow
+
+
+20-11
+freshly starting from 19-11\Car-FinderUniversal-0 version. So starting with login view controller again.
+
+completed loginviewcontroller and registerviewcontroller. Actually there was a problem in loginviewcontroller. When I go to registerviewcontroller and comeback to login view controller, it was crashing. This was because, I was adding subviews to scrollview instead of self.view. (also giving constraints based on scrollview)
+
+now I am adding subviews to self.view and the problem is rectified. (now giving contraints based on self.view) in loginviewcontroller.
+-
+
+21-11
+completed RegistrationInfoViewController. However in iphone landscape mode the text fields are moved to right edge of screen as i have binded that way. remove that condition and see
+-
+now RegistrationInfoViewController working fine. also added right margin for noteLAbel.
+
+22-11
+completed vehicleType and most of seller info
+
+23-11
+completed sellerinfo
+
+modify many blocks where self is used instead of weakSelf.
+-
+completed vehicleinfo
+-
+25-11
+adjusted settings for SelectedCarDetails, completed CameraViewController
+-
+adjusted fgallery
+-
+completed multisite listing
+
+
+27-11
+moodified detail view but buttons are not working
+
+28-11
+changed logic in detailview according as per mixed approach. Now the buttons are working
+-
+wrote the code to arrange all items in detail view. hoeverr, the desc filed is giving error when rotated
+-
+
+29-11
+added notif observer in searchmakesviewcontroller
+
+fixed crash when going from preference table to preferenceresults in ipad
+
+30-11
+modified camera related functionality to add for ipad
+-
+made minor modifications
+-
+changed to live links
+
+send email to seller updated and other minor modifications
+
+14-12
+removed all constraints in LoginViewController and gave again. It is looking fine in all orientations/ipad, but tap not detected on any control
+-
+restored previous version of LoginViewController from Arun's 13-12 work and just added rotation method (willAnimateRotationToInterfaceOrientation:duration)to make the login view appear in center.
+-
+
+20-12
+took code from Arun and made modifications to popularcarsviewcontroller for ipad compatibity- increase pages to 15
+-
+disabled deleting of cars for ipad in popularcarsviewcontroller
+-
+changed pagesize from 9 to 18
+-
+enabled deleting of cars in ipad in popularcarsviewcontroller. working fine
+-
+tested label in detailviewcontroller. it is working fine for rotation also.
+-
+
+21-12
+added detailview code a bit. added images to project using assets catalog.
+
+completed detailview layout
+-
+
+8-1-14
+took from Arun's version of 7-1-14.
+added dependency based block operations to overcome flickerring when adding cars in popularcarsviewcontroller
+
+
+9-1-14
+fixed loading of two pages when going top in popular cars
+-
+-
+replaced seller detail with non-autolayout version. It is stiff and desc is not expanding but this corrected the crash bug
+
+10-1-14
+modified ipad pre post fecthing logic for search results
+
+added left align for makes, models
+
+detail view for seller desc corrected. but the screen not flowing smoothly
+
+
+
+
+
+
+
+I have added keychain logic from http://stackoverflow.com/questions/6972092/ios-how-to-store-username-password-within-an-app. However, took ARC version of apple code from https://gist.github.com/dhoerl/1170641
+
+
+
+
+8. create error handling methods in all afhhtprequest calls
+
+9. The navigation back bar button image is taken from http://www.teehanlax.com/blog/iphone-gui-psd-v4/ redirecting to http://www.teehanlax.com/tools/iphone/
+
+
+
+edit/save functionality in all car screens
+
+vehicle description screen
+
+toolbar in gallery
+
+proper dummy/real url in all screens
+
+shifting withdraw button to new screen
+
+
+14. check self/weakself in all blocks
+
+15. check dealloc in all files
+
+16. check unused headear files/ properties
+
+17. disable save button once it is clicked. otherwise user may press it many times. enable it again when success or failure
+
+
+
+
+
+22
+add accessibility
+
+
+
+
+28. use mbprogresshud
+
+30. change condition regarding _MaxPhotos allowed to upload (selectedcardetails-userHasLessThan20Cars)
+
+31.
+if ([[aMake valueForKey:@"carsCount"] integerValue]>0) { //condition to take makes where there is atleast one car
+            [self.makesDictionary setObject:[aMake valueForKey:@"makeName"] forKey:[aMake valueForKey:@"makeID"]];
+        }
+
+
+
+33. give different color for edit/nonedit mode for vehicle features
+
+
+34. accessibility for image ivew in gallery, see all thumbnails, the default accessibility label for 'device cannot call now' contains phone num. in brackets, pickers like statepicker
+
+--
+logout button in :
+
+packagelist
+packagedetails
+customersupport
+selectedcardetails
+
+from shobha:
+1.add mileage param in AddCarDetails (add a car) service
+2. convert links to test db
+3. email service to asmx
+4. dynamic makes
+5. in seller info, phone number is changeable (previously it was not). check this with shobha
+6. modify multisite listing to add fb data
+7. in seller info email field is removed. should send selleremail from car record
+
+
+
+-
+
+ [self validateZip:self.zipStr];
+ 
+ here cup=2
+ 
+ --
+ 
+ [UIView setAnimationsEnabled:NO]; - delete prev results
+ 
+ herre cup=3
+ 
+ 2008 calillac escalade - need to rotate
+ 
+ 
+ -
+ 
+ 
+ 2. comment setNetworkActivityIndicatorVisible:YES in CommonMethods:showActivityView, because it is called in a background thread.
+ 
+ 3. remove registerForKeyboardNotifications and its related methods from searchview
+ 
+ 4. all detail views are not scrolling fully to bottom
+ 
+ 5. description is not extending fully accross the screen width
+ 
+ 5. add requireddevicecapabilities
+ 
+ 6. try why showactivityviewer is crashing some times. try to use svstatushud or any other hud
+ 
+ for selectedcardetails, convert to grouped as empty lines are showing in ipad verrsion.
+
+vertical scroll bar is appearing in registrationinfo in ipad eventhough the data is less than a screen full
+
+(ipad only)white color background is appearing for some screens like featuresscreenfromdetailview,
+
+7. comment all nslogs
+
+
+How to automatically make fname, lname resize in rotation to equal widths:
+1. horizontal spacing b/w fname, lname (x pos)
+2. align bottoms of fname, lname (y pos)
+3. spacing b/w lname and edge of container (so that textfields do not expand at runtime and go beyond bounds)
+4. fname, lname equal widths
+
+latha main hr at sparsh
+
+
+loginviewcontroller
+registerviewcontroller
+MyListedCars
+loggedusermaintable
+RegistrationInfoViewController
+CustomerSupport
+SelectedCarDetails
+PackageDetailsViewController
+
+detailviewforseller partially
+send email to sellerr is nto complete
+
+remove scrolling in sendemailtoseller webview
+
+height of email in detailview for seller should be increased. g in "datumglobal" is getting cut off from bottom. Similary 'y' is getting cut off in 'validity' in package details screen.
+
+phone number is moved from its actual place to beside of thumbnail in mylistdetailview (iPad)
+    
+description is not occupying full in mylistdetailview. So check this condition for detailviewforseller
+
+in registration info: I am not able to use autolayout for statepicker. If I use it, picker is empty though clicking on it is selecting differnt values(as seen in console)
+
+10. remove
+@property(strong,nonatomic) UIImageView *activityImageView;
+@property(strong,nonatomic) UIImage *showActivityViewerImage;
+@property(strong,nonatomic) UIActivityIndicatorView *activityWheel;
+
+from all except common methods and see
+
+
+
