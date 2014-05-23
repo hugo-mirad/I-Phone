@@ -50,9 +50,9 @@
 	// Do any additional setup after loading the view, typically from a nib.
    // //[self.navigationController.navigationBar setTintColor:[UIColor blackColor]];
     self.navigationController.navigationBar.hidden = YES;
-    self.view.backgroundColor = [UIColor colorWithRed:216.0f/255.0f green:74.0f/255.0f blue:73.0f/255.0f alpha:1.0f];//colorWithRed:216.0f/255.0f green:74.0f/255.0f blue:73.0f/255.0f alpha:1.0f
+   // self.view.backgroundColor = [UIColor colorWithRed:216.0f/255.0f green:74.0f/255.0f blue:73.0f/255.0f alpha:1.0f];//colorWithRed:216.0f/255.0f green:74.0f/255.0f blue:73.0f/255.0f alpha:1.0f
     
-    
+    self.view.backgroundColor = [UIColor redColor];
     
     aboutUsButton=[CheckButton buttonWithType:UIButtonTypeCustom];
     if (UI_USER_INTERFACE_IDIOM()==UIUserInterfaceIdiomPhone)
