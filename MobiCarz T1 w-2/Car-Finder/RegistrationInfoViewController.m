@@ -189,7 +189,7 @@ static inline BOOL IsEmpty(id thing)
     self.nameTextField=[[UITextField alloc] initWithFrame:CGRectMake(117,  14, 193, 31)];
     self.nameTextField.backgroundColor=[UIColor clearColor];
     self.nameTextField.borderStyle = UITextBorderStyleRoundedRect;
-    self.nameTextField.font = [UIFont systemFontOfSize:15];
+    self.nameTextField.font = [UIFont systemFontOfSize:13];
     self.nameTextField.placeholder = @"Name";
     self.nameTextField.textAlignment=NSTextAlignmentLeft;
     self.nameTextField.textColor=[UIColor blackColor];
@@ -221,7 +221,7 @@ static inline BOOL IsEmpty(id thing)
     self.comapanyNameTextField=[[UITextField alloc] initWithFrame:CGRectMake(117, 50, 193, 31)];
     self.comapanyNameTextField.backgroundColor=[UIColor clearColor];
     self.comapanyNameTextField.borderStyle = UITextBorderStyleRoundedRect;
-    self.comapanyNameTextField.font = [UIFont systemFontOfSize:15];
+    self.comapanyNameTextField.font = [UIFont systemFontOfSize:13];
     self.comapanyNameTextField.placeholder = @"Company Name";
     self.comapanyNameTextField.textAlignment=NSTextAlignmentLeft;
     //fNameTextField.textColor=[UIColor blackColor];
@@ -249,7 +249,7 @@ static inline BOOL IsEmpty(id thing)
     self.phoneNoTextField=[[UITextField alloc] initWithFrame:CGRectMake(117, 85, 193, 31)];
     self.phoneNoTextField.backgroundColor=[UIColor clearColor];
     self.phoneNoTextField.borderStyle = UITextBorderStyleRoundedRect;
-    self.phoneNoTextField.font = [UIFont systemFontOfSize:15];
+    self.phoneNoTextField.font = [UIFont systemFontOfSize:13];
     self.phoneNoTextField.placeholder = @"Phone";
     self.phoneNoTextField.textAlignment=NSTextAlignmentLeft;
     self.phoneNoTextField.textColor=[UIColor blackColor];
@@ -277,7 +277,7 @@ static inline BOOL IsEmpty(id thing)
     self.altPhoneNoTextField=[[UITextField alloc] initWithFrame:CGRectMake(117, 122, 193, 31)];
     self.altPhoneNoTextField.backgroundColor=[UIColor clearColor];
     self.altPhoneNoTextField.borderStyle = UITextBorderStyleRoundedRect;
-    self.altPhoneNoTextField.font = [UIFont systemFontOfSize:15];
+    self.altPhoneNoTextField.font = [UIFont systemFontOfSize:13];
     self.altPhoneNoTextField.placeholder = @"Alternate Phone";
     self.altPhoneNoTextField.textAlignment=NSTextAlignmentLeft;
     //fNameTextField.textColor=[UIColor blackColor];
@@ -306,7 +306,7 @@ static inline BOOL IsEmpty(id thing)
     self.emailTextField=[[UITextField alloc] initWithFrame:CGRectMake(117, 159, 193, 31)];//117, 159, 193, 31//117, 312, 193, 31
     self.emailTextField.backgroundColor=[UIColor clearColor];
     self.emailTextField.borderStyle = UITextBorderStyleRoundedRect;
-    self.emailTextField.font = [UIFont systemFontOfSize:15];
+    self.emailTextField.font = [UIFont systemFontOfSize:13];
     self.emailTextField.placeholder = @"Email";
     self.emailTextField.textAlignment=NSTextAlignmentLeft;
     self.emailTextField.textColor=[UIColor blackColor];
@@ -335,7 +335,7 @@ static inline BOOL IsEmpty(id thing)
     self.altEmailTextField.backgroundColor=[UIColor clearColor];
     
     self.altEmailTextField.borderStyle = UITextBorderStyleRoundedRect;
-    self.altEmailTextField.font = [UIFont systemFontOfSize:15];
+    self.altEmailTextField.font = [UIFont systemFontOfSize:13];
     self.altEmailTextField.placeholder = @"Alternate Email";
     self.altEmailTextField.textAlignment=NSTextAlignmentLeft;
     //fNameTextField.textColor=[UIColor blackColor];
@@ -363,7 +363,7 @@ static inline BOOL IsEmpty(id thing)
     self.addressTextField=[[UITextField alloc] initWithFrame:CGRectMake(117, 236, 193, 31)]; //117, 274, 193, 31
     self.addressTextField.backgroundColor=[UIColor clearColor];
     self.addressTextField.borderStyle = UITextBorderStyleRoundedRect;
-    self.addressTextField.font = [UIFont systemFontOfSize:15];
+    self.addressTextField.font = [UIFont systemFontOfSize:13];
     self.addressTextField.placeholder = @"Address";
     self.addressTextField.textAlignment=NSTextAlignmentLeft;
     //fNameTextField.textColor=[UIColor blackColor];
@@ -392,7 +392,7 @@ static inline BOOL IsEmpty(id thing)
     self.cityTextField=[[UITextField alloc] initWithFrame:CGRectMake(117, 274, 193, 31)]; //117, 236, 193, 31
     self.cityTextField.backgroundColor=[UIColor clearColor];
     self.cityTextField.borderStyle = UITextBorderStyleRoundedRect;
-    self.cityTextField.font = [UIFont systemFontOfSize:15];
+    self.cityTextField.font = [UIFont systemFontOfSize:13];
     self.cityTextField.placeholder = @"City";
     self.cityTextField.textAlignment=NSTextAlignmentLeft;
     //fNameTextField.textColor=[UIColor blackColor];
@@ -421,7 +421,7 @@ static inline BOOL IsEmpty(id thing)
     self.zipTextField=[[UITextField alloc] initWithFrame:CGRectMake(117, 312, 90, 31)];
     self.zipTextField.backgroundColor=[UIColor clearColor];
     self.zipTextField.borderStyle = UITextBorderStyleRoundedRect;
-    self.zipTextField.font = [UIFont systemFontOfSize:15];
+    self.zipTextField.font = [UIFont systemFontOfSize:13];
     self.zipTextField.placeholder = @"Zip Code";
     self.zipTextField.textAlignment=NSTextAlignmentLeft;
     //fNameTextField.textColor=[UIColor blackColor];
@@ -447,7 +447,7 @@ static inline BOOL IsEmpty(id thing)
     self.stateTextField=[[UITextField alloc] initWithFrame:CGRectMake(117, 360, 90, 31)];
     self.stateTextField.backgroundColor=[UIColor clearColor];
     self.stateTextField.borderStyle = UITextBorderStyleRoundedRect;
-    self.stateTextField.font = [UIFont systemFontOfSize:15];
+    self.stateTextField.font = [UIFont systemFontOfSize:13];
     self.stateTextField.placeholder = @"State";
     self.stateTextField.textAlignment=NSTextAlignmentLeft;
     //fNameTextField.textColor=[UIColor blackColor];
@@ -867,7 +867,7 @@ static inline BOOL IsEmpty(id thing)
         [pickerLabel setFrame:frame];
         [pickerLabel setTextAlignment:NSTextAlignmentCenter];
         [pickerLabel setBackgroundColor:[UIColor clearColor]];
-        //[pickerLabel setFont:[UIFont boldSystemFontOfSize:15]];
+        //[pickerLabel setFont:[UIFont boldsystemFontOfSize:13]];
         
         pickerLabel.adjustsFontSizeToFitWidth = YES;
     }

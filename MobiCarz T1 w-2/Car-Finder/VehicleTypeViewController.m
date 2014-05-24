@@ -198,9 +198,11 @@ static inline BOOL IsEmpty(id thing) {
     self.makeTextField.frame = CGRectMake(72, 20, 200, 30);
     self.makeTextField.text = [self.carReceived make];
     self.makeTextField.enabled = NO;
+    self.makeTextField.font = [UIFont systemFontOfSize:13];
     //self.makePickerTextField.tag = 8;
     self.makeTextField.borderStyle = UITextBorderStyleRoundedRect;
     self.makeTextField.backgroundColor = [UIColor clearColor];
+    self.makeTextField.contentVerticalAlignment = UIControlContentVerticalAlignmentCenter;
     self.makeTextField.textColor = [UIColor blackColor];
     [contentView addSubview:self.makeTextField];
     
@@ -218,6 +220,8 @@ static inline BOOL IsEmpty(id thing) {
     self.modelTextField.frame=CGRectMake(95, 60, 200, 30);
     self.modelTextField.text = [self.carReceived model];
     self.modelTextField.enabled = NO;
+    self.modelTextField.font = [UIFont systemFontOfSize:13];
+    self.modelTextField.contentVerticalAlignment = UIControlContentVerticalAlignmentCenter;
     //self.makePickerTextField.tag = 8;
     self.modelTextField.borderStyle = UITextBorderStyleRoundedRect;
     self.modelTextField.backgroundColor = [UIColor clearColor];
@@ -237,8 +241,10 @@ static inline BOOL IsEmpty(id thing) {
     self.yearTextField.frame=CGRectMake(95, 100, 200, 30);
     self.yearTextField.text = [NSString stringWithFormat:@"%d",[self.carReceived year]];
     self.yearTextField.enabled = NO;
+    self.yearTextField.font = [UIFont systemFontOfSize:13];
     //self.makePickerTextField.tag = 8;
     self.yearTextField.borderStyle = UITextBorderStyleRoundedRect;
+    self.yearTextField.contentVerticalAlignment = UIControlContentVerticalAlignmentCenter;
     self.yearTextField.backgroundColor = [UIColor clearColor];
     self.yearTextField.textColor = [UIColor blackColor];
     [contentView addSubview:self.yearTextField];
@@ -254,7 +260,9 @@ static inline BOOL IsEmpty(id thing) {
     self.bodyStyleTextField=[[UITextField alloc] init];//WithFrame:CGRectMake(95, 208, 200, 30)];
     self.bodyStyleTextField.frame=CGRectMake(95, 208, 200, 30);
     self.bodyStyleTextField.backgroundColor=[UIColor clearColor];
+    self.bodyStyleTextField.font = [UIFont systemFontOfSize:13];
     self.bodyStyleTextField.borderStyle = UITextBorderStyleRoundedRect;
+    self.bodyStyleTextField.contentVerticalAlignment = UIControlContentVerticalAlignmentCenter;
     self.bodyStyleTextField.textColor = [UIColor blackColor];
     [contentView addSubview:self.bodyStyleTextField];
     

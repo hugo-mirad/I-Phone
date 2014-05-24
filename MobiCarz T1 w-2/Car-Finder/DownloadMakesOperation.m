@@ -189,7 +189,7 @@ NSString *kMakesDictNotifKey=@"makesDictKey";
     NSMutableDictionary *userInfo = [[NSMutableDictionary alloc]initWithCapacity:1];
     [userInfo setValue:@"Failed to get data." forKey:NSLocalizedDescriptionKey];
     
-    NSError *error=[NSError errorWithDomain:@"UCE" code:404 userInfo:userInfo];
+    NSError *error=[NSError errorWithDomain:@"MobiCarz" code:404 userInfo:userInfo];
     
     [[NSNotificationCenter defaultCenter]postNotificationName:@"MakesOperationDownloadErrorNotif" object:self userInfo:[NSDictionary dictionaryWithObject:error forKey:@"MakesOperationDownloadErrorKey"]];
 }

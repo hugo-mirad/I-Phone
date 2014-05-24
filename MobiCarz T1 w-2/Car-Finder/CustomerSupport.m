@@ -268,7 +268,7 @@ if (floor(NSFoundationVersionNumber) <= NSFoundationVersionNumber_iOS_6_1){
 - (void)phoneLblTapped:(id)sender
 {
     //see if the device can actually make a call
-    NSString *phonenum=[NSString stringWithFormat:@"tel://+18887868307"];
+    NSString *phonenum=[NSString stringWithFormat:@"tel://+1888-465-6693"];
     if([CommonMethods canDevicePlaceAPhoneCall])
     {
         [[UIApplication sharedApplication] openURL:[NSURL URLWithString:phonenum]];
@@ -276,7 +276,7 @@ if (floor(NSFoundationVersionNumber) <= NSFoundationVersionNumber_iOS_6_1){
     
     else
     {
-        NSString *msg=[NSString stringWithFormat:@"This device cannot place a call now. Use another phone to call UCE at (888)786-8307."];
+        NSString *msg=[NSString stringWithFormat:@"This device cannot place a call now. Use another phone to call MobiCarz at (888)465-6693."];
         
         UIAlertView *alert=[[UIAlertView alloc]initWithTitle:@"Device Cannot Call Now" message:msg delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil, nil];
         [alert show];
@@ -293,7 +293,7 @@ if (floor(NSFoundationVersionNumber) <= NSFoundationVersionNumber_iOS_6_1){
     if([MFMessageComposeViewController canSendText])
     {
         smsController.body = @"SMS message here";
-        smsController.recipients = [NSArray arrayWithObjects:@"1(888)786-8307", nil];
+        smsController.recipients = [NSArray arrayWithObjects:@"1(888)465-6693", nil];
         smsController.messageComposeDelegate = self;
         [self presentViewController:smsController animated:YES completion:nil];
     }
@@ -517,7 +517,7 @@ if (floor(NSFoundationVersionNumber) <= NSFoundationVersionNumber_iOS_6_1){
     NSMutableDictionary *userInfo = [[NSMutableDictionary alloc]initWithCapacity:1];
     [userInfo setValue:@"Error in LoggedUserMainTable" forKey:NSLocalizedDescriptionKey];
     
-    NSError *error2=[NSError errorWithDomain:@"UCE" code:[error code] userInfo:userInfo];
+    NSError *error2=[NSError errorWithDomain:@"MobiCarz" code:[error code] userInfo:userInfo];
     [self customerSupportOperationFailedMethod:error2];
     
 }
@@ -528,7 +528,7 @@ if (floor(NSFoundationVersionNumber) <= NSFoundationVersionNumber_iOS_6_1){
     NSMutableDictionary *userInfo = [[NSMutableDictionary alloc]initWithCapacity:1];
     [userInfo setValue:@"JSON error in LoggedUserMainTable" forKey:NSLocalizedDescriptionKey];
     
-    NSError *error2=[NSError errorWithDomain:@"UCE" code:[error code] userInfo:userInfo];
+    NSError *error2=[NSError errorWithDomain:@"MobiCarz" code:[error code] userInfo:userInfo];
     [self customerSupportOperationFailedMethod:error2];
     
 }

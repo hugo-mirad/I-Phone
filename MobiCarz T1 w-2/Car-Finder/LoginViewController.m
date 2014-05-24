@@ -441,6 +441,7 @@ static inline BOOL IsEmpty(id thing) {
         }
         [alert show];
         alert=nil;
+        [self hideActivityViewer];
     }
     else if (loginResult) {
         //don't enable the login button now. we will enable that after call to registerInfoServiceImplemenation
@@ -518,7 +519,7 @@ static inline BOOL IsEmpty(id thing) {
     NSMutableDictionary *userInfo = [[NSMutableDictionary alloc]initWithCapacity:1];
     [userInfo setValue:@"Error in LoginView" forKey:NSLocalizedDescriptionKey];
     
-    NSError *error2=[NSError errorWithDomain:@"UCE" code:[error code] userInfo:userInfo];
+    NSError *error2=[NSError errorWithDomain:@"MobiCarz" code:[error code] userInfo:userInfo];
     [self callLoginOperationFailedMethod:error2];
     
 }
@@ -528,7 +529,7 @@ static inline BOOL IsEmpty(id thing) {
     NSMutableDictionary *userInfo = [[NSMutableDictionary alloc]initWithCapacity:1];
     [userInfo setValue:@"JSON error in LoginViewController" forKey:NSLocalizedDescriptionKey];
     
-    NSError *error2=[NSError errorWithDomain:@"UCE" code:[error code] userInfo:userInfo];
+    NSError *error2=[NSError errorWithDomain:@"MobiCarz" code:[error code] userInfo:userInfo];
     [self callLoginOperationFailedMethod:error2];
     
 }

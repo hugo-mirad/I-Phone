@@ -199,13 +199,14 @@ static inline BOOL IsEmpty(id thing)
     self.phoneNumberTextField.placeholder = @"Phone Number";
     self.phoneNumberTextField.backgroundColor=[UIColor clearColor];
     self.phoneNumberTextField.borderStyle=UITextBorderStyleRoundedRect;
-    self.phoneNumberTextField.font=[UIFont systemFontOfSize:15];
+    self.phoneNumberTextField.font=[UIFont systemFontOfSize:13];
     self.phoneNumberTextField.textColor = [UIColor blackColor];
     self.phoneNumberTextField.textAlignment=NSTextAlignmentLeft;
     self.phoneNumberTextField.autocorrectionType=UITextAutocorrectionTypeNo;
     self.phoneNumberTextField.keyboardType=UIKeyboardTypePhonePad;
     self.phoneNumberTextField.returnKeyType=UIReturnKeyDone;
     self.phoneNumberTextField.clearButtonMode=UITextFieldViewModeWhileEditing;
+    self.phoneNumberTextField.contentVerticalAlignment = UIControlContentVerticalAlignmentCenter;
     self.phoneNumberTextField.tag=3;
     self.phoneNumberTextField.delegate=self;
     //self.phoneNumberTextField.userInteractionEnabled = NO;
@@ -227,13 +228,14 @@ static inline BOOL IsEmpty(id thing)
     self.cityTextField.placeholder = @"City";
     self.cityTextField.backgroundColor=[UIColor clearColor];
     self.cityTextField.borderStyle=UITextBorderStyleRoundedRect;
-    self.cityTextField.font=[UIFont systemFontOfSize:15];
+    self.cityTextField.font=[UIFont systemFontOfSize:13];
     self.cityTextField.textColor = [UIColor blackColor];
     self.cityTextField.textAlignment=NSTextAlignmentLeft;
     self.cityTextField.autocorrectionType=UITextAutocorrectionTypeNo;
     self.cityTextField.keyboardType=UIKeyboardTypeAlphabet;
     self.cityTextField.returnKeyType=UIReturnKeyDone;
     self.cityTextField.clearButtonMode=UITextFieldViewModeWhileEditing;
+    self.cityTextField.contentVerticalAlignment = UIControlContentVerticalAlignmentCenter;
     self.cityTextField.tag=1;
     self.cityTextField.delegate=self;
     [contentView addSubview:self.cityTextField];
@@ -253,13 +255,14 @@ static inline BOOL IsEmpty(id thing)
     self.zipTextField.placeholder = @"Zip";
     self.zipTextField.backgroundColor=[UIColor clearColor];
     self.zipTextField.borderStyle=UITextBorderStyleRoundedRect;
-    self.zipTextField.font=[UIFont systemFontOfSize:15];
+    self.zipTextField.font=[UIFont systemFontOfSize:13];
     self.zipTextField.textAlignment=NSTextAlignmentLeft;
     self.zipTextField.textColor = [UIColor blackColor];
     self.zipTextField.autocorrectionType=UITextAutocorrectionTypeNo;
     self.zipTextField.keyboardType=UIKeyboardTypeNumberPad;
     self.zipTextField.returnKeyType=UIReturnKeyDone;
     self.zipTextField.clearButtonMode=UITextFieldViewModeWhileEditing;
+    self.zipTextField.contentVerticalAlignment = UIControlContentVerticalAlignmentCenter;
     self.zipTextField.tag=2;
     self.zipTextField.delegate=self;
     [contentView addSubview:self.zipTextField];
@@ -279,7 +282,7 @@ static inline BOOL IsEmpty(id thing)
     self.stateTextField=[[UITextField alloc] initWithFrame:CGRectMake(80, 230, 220, 30)]; //80, 100, 220, 30
     self.stateTextField.backgroundColor=[UIColor clearColor];
     self.stateTextField.borderStyle = UITextBorderStyleRoundedRect;
-    self.stateTextField.font = [UIFont systemFontOfSize:15];
+    self.stateTextField.font = [UIFont systemFontOfSize:13];
     self.stateTextField.placeholder = @"State";
     
     self.stateTextField.contentVerticalAlignment = UIControlContentVerticalAlignmentCenter;

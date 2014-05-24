@@ -1737,7 +1737,7 @@ static inline BOOL IsEmpty(id thing) {
 
 - (void)handleDoesNotRespondToSelectorError
 {
-    UIAlertView *alert=[[UIAlertView alloc]initWithTitle:@"Server Error" message:@"Data could not be retrieved as UCE server is down." delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil, nil];
+    UIAlertView *alert=[[UIAlertView alloc]initWithTitle:@"Server Error" message:@"Data could not be retrieved as MobiCarz server is down." delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil, nil];
     [alert show];
     alert=nil;
     

@@ -205,7 +205,7 @@ static inline BOOL IsEmpty(id thing) {
     yearLabel.backgroundColor=[UIColor clearColor];
     yearLabel.text=@"Year:*";
     yearLabel.textColor=[UIColor blackColor];
-    yearLabel.font=[UIFont boldSystemFontOfSize:15];
+    yearLabel.font=[UIFont boldSystemFontOfSize:13];
     [self.addNewCarScrollView addSubview:yearLabel];
     yearLabel=nil;
     
@@ -267,7 +267,7 @@ static inline BOOL IsEmpty(id thing) {
     priceLabel.backgroundColor=[UIColor clearColor];
     priceLabel.text=@"Price($):";
     priceLabel.textColor=[UIColor blackColor];
-    priceLabel.font=[UIFont boldSystemFontOfSize:15];
+    priceLabel.font=[UIFont boldSystemFontOfSize:13];
     [self.addNewCarScrollView addSubview:priceLabel];
     priceLabel=nil;
     
@@ -289,7 +289,7 @@ static inline BOOL IsEmpty(id thing) {
     mileageLabel.backgroundColor=[UIColor clearColor];
     mileageLabel.text=@"Millage:";
     mileageLabel.textColor=[UIColor blackColor];
-    mileageLabel.font=[UIFont boldSystemFontOfSize:15];
+    mileageLabel.font=[UIFont boldSystemFontOfSize:13];
     [self.addNewCarScrollView addSubview:mileageLabel];
     mileageLabel=nil;
 
@@ -456,7 +456,7 @@ static inline BOOL IsEmpty(id thing) {
         [pickerLabel setFrame:frame];
         [pickerLabel setTextAlignment:NSTextAlignmentLeft];
         [pickerLabel setBackgroundColor:[UIColor clearColor]];
-        //[pickerLabel setFont:[UIFont boldSystemFontOfSize:15]];
+        //[pickerLabel setFont:[UIFont boldsystemFontOfSize:13]];
         
         pickerLabel.adjustsFontSizeToFitWidth = YES;
     }

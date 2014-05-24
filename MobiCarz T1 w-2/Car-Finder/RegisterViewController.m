@@ -241,7 +241,7 @@ static inline BOOL IsEmpty(id thing)
         //self.fNameTextField=[[UITextField alloc] initWithFrame:CGRectMake(20, 58, 128, 31)];
         self.fNameTextField.backgroundColor=[UIColor whiteColor];
         self.fNameTextField.borderStyle = UITextBorderStyleRoundedRect;
-        self.fNameTextField.font = [UIFont systemFontOfSize:15];
+        self.fNameTextField.font = [UIFont systemFontOfSize:13];
         self.fNameTextField.placeholder = @"First Name";
         self.fNameTextField.textAlignment=NSTextAlignmentLeft;
         self.fNameTextField.textColor=[UIColor blackColor];
@@ -258,7 +258,7 @@ static inline BOOL IsEmpty(id thing)
        // self.lNameTextField=[[UITextField alloc] initWithFrame:CGRectMake(172, 58, 128, 31)];
         self.lNameTextField.backgroundColor=[UIColor whiteColor];
         self.lNameTextField.borderStyle = UITextBorderStyleRoundedRect;
-        self.lNameTextField.font = [UIFont systemFontOfSize:15];
+        self.lNameTextField.font = [UIFont systemFontOfSize:13];
         self.lNameTextField.placeholder = @"Last Name";
         self.lNameTextField.textAlignment=NSTextAlignmentLeft;
         self.lNameTextField.textColor=[UIColor blackColor];
@@ -281,7 +281,7 @@ static inline BOOL IsEmpty(id thing)
        // self.emailTextField=[[UITextField alloc] initWithFrame:CGRectMake(20, 144, 280, 31)];
         self.emailTextField.backgroundColor=[UIColor whiteColor];
         self.emailTextField.borderStyle = UITextBorderStyleRoundedRect;
-        self.emailTextField.font = [UIFont systemFontOfSize:15];
+        self.emailTextField.font = [UIFont systemFontOfSize:13];
         self.emailTextField.placeholder = @"Email";
         self.emailTextField.textAlignment=NSTextAlignmentLeft;
         self.emailTextField.textColor=[UIColor blackColor];
@@ -305,7 +305,7 @@ static inline BOOL IsEmpty(id thing)
        //self.confirmEmailTextField=[[UITextField alloc] initWithFrame:CGRectMake(20, 226, 280, 31)];
         self.confirmEmailTextField.backgroundColor=[UIColor whiteColor];
         self.confirmEmailTextField.borderStyle = UITextBorderStyleRoundedRect;
-        self.confirmEmailTextField.font = [UIFont systemFontOfSize:15];
+        self.confirmEmailTextField.font = [UIFont systemFontOfSize:13];
         self.confirmEmailTextField.placeholder = @"Confirm Email";
         self.confirmEmailTextField.textAlignment=NSTextAlignmentLeft;
         self.confirmEmailTextField.textColor=[UIColor blackColor];
@@ -329,7 +329,7 @@ static inline BOOL IsEmpty(id thing)
        // self.phoneTextField=[[UITextField alloc] initWithFrame:CGRectMake(20, 304, 128, 31)];
         self.phoneTextField.backgroundColor=[UIColor whiteColor];
         self.phoneTextField.borderStyle = UITextBorderStyleRoundedRect;
-        self.phoneTextField.font = [UIFont systemFontOfSize:15];
+        self.phoneTextField.font = [UIFont systemFontOfSize:13];
         self.phoneTextField.placeholder = @"Phone";
         self.phoneTextField.textAlignment=NSTextAlignmentLeft;
         self.phoneTextField.textColor=[UIColor blackColor];
@@ -385,7 +385,7 @@ static inline BOOL IsEmpty(id thing)
         self.fNameTextField=[[UITextField alloc] initWithFrame:CGRectMake(244, 148, 128, 31)];
         self.fNameTextField.backgroundColor=[UIColor whiteColor];
         self.fNameTextField.borderStyle = UITextBorderStyleRoundedRect;
-        self.fNameTextField.font = [UIFont systemFontOfSize:15];
+        self.fNameTextField.font = [UIFont systemFontOfSize:13];
         self.fNameTextField.placeholder = @"First Name";
         self.fNameTextField.textAlignment=NSTextAlignmentLeft;
         self.fNameTextField.textColor=[UIColor blackColor];
@@ -402,7 +402,7 @@ static inline BOOL IsEmpty(id thing)
         self.lNameTextField=[[UITextField alloc] initWithFrame:CGRectMake(376, 148, 128, 31)];
         self.lNameTextField.backgroundColor=[UIColor whiteColor];
         self.lNameTextField.borderStyle = UITextBorderStyleRoundedRect;
-        self.lNameTextField.font = [UIFont systemFontOfSize:15];
+        self.lNameTextField.font = [UIFont systemFontOfSize:13];
         self.lNameTextField.placeholder = @"Last Name";
         self.lNameTextField.textAlignment=NSTextAlignmentLeft;
         self.lNameTextField.textColor=[UIColor blackColor];
@@ -425,7 +425,7 @@ static inline BOOL IsEmpty(id thing)
         self.emailTextField=[[UITextField alloc] initWithFrame:CGRectMake(244, 240, 280, 31)];
         self.emailTextField.backgroundColor=[UIColor whiteColor];
         self.emailTextField.borderStyle = UITextBorderStyleRoundedRect;
-        self.emailTextField.font = [UIFont systemFontOfSize:15];
+        self.emailTextField.font = [UIFont systemFontOfSize:13];
         self.emailTextField.placeholder = @"Email";
         self.emailTextField.textAlignment=NSTextAlignmentLeft;
         self.emailTextField.textColor=[UIColor blackColor];
@@ -449,13 +449,14 @@ static inline BOOL IsEmpty(id thing)
         self.confirmEmailTextField=[[UITextField alloc] initWithFrame:CGRectMake(244, 336, 280, 31)];
         self.confirmEmailTextField.backgroundColor=[UIColor whiteColor];
         self.confirmEmailTextField.borderStyle = UITextBorderStyleRoundedRect;
-        self.confirmEmailTextField.font = [UIFont systemFontOfSize:15];
+        self.confirmEmailTextField.font = [UIFont systemFontOfSize:13];
         self.confirmEmailTextField.placeholder = @"Confirm Email";
         self.confirmEmailTextField.textAlignment=NSTextAlignmentLeft;
         self.confirmEmailTextField.textColor=[UIColor blackColor];
         self.confirmEmailTextField.autocorrectionType = UITextAutocorrectionTypeNo;
         self.confirmEmailTextField.keyboardType = UIKeyboardTypeEmailAddress;
         self.confirmEmailTextField.returnKeyType = UIReturnKeyDone;
+        self.confirmEmailTextField.keyboardType = UIKeyboardTypeEmailAddress;
         self.confirmEmailTextField.clearButtonMode = UITextFieldViewModeWhileEditing;
         self.confirmEmailTextField.contentVerticalAlignment = UIControlContentVerticalAlignmentCenter;
         self.confirmEmailTextField.tag=4;
@@ -473,7 +474,7 @@ static inline BOOL IsEmpty(id thing)
         self.phoneTextField=[[UITextField alloc] initWithFrame:CGRectMake(244, 430, 128, 31)];
         self.phoneTextField.backgroundColor=[UIColor whiteColor];
         self.phoneTextField.borderStyle = UITextBorderStyleRoundedRect;
-        self.phoneTextField.font = [UIFont systemFontOfSize:15];
+        self.phoneTextField.font = [UIFont systemFontOfSize:13];
         self.phoneTextField.placeholder = @"Phone";
         self.phoneTextField.textAlignment=NSTextAlignmentLeft;
         self.phoneTextField.textColor=[UIColor blackColor];
@@ -842,7 +843,7 @@ static inline BOOL IsEmpty(id thing)
     NSMutableDictionary *userInfo = [[NSMutableDictionary alloc]initWithCapacity:1];
     [userInfo setValue:@"Error in LoggedUserMainTable" forKey:NSLocalizedDescriptionKey];
     
-    NSError *error2=[NSError errorWithDomain:@"UCE" code:[error code] userInfo:userInfo];
+    NSError *error2=[NSError errorWithDomain:@"MobiCarz" code:[error code] userInfo:userInfo];
     [self registerOperationFailedMethod:error2];
     
 }
@@ -853,7 +854,7 @@ static inline BOOL IsEmpty(id thing)
     NSMutableDictionary *userInfo = [[NSMutableDictionary alloc]initWithCapacity:1];
     [userInfo setValue:@"JSON error in LoggedUserMainTable" forKey:NSLocalizedDescriptionKey];
     
-    NSError *error2=[NSError errorWithDomain:@"UCE" code:[error code] userInfo:userInfo];
+    NSError *error2=[NSError errorWithDomain:@"MobiCarz" code:[error code] userInfo:userInfo];
     [self registerOperationFailedMethod:error2];
     
 }

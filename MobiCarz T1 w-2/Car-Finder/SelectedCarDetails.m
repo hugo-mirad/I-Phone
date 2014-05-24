@@ -279,7 +279,7 @@
 
 - (void)handleDoesNotRespondToSelectorError
 {
-    UIAlertView *alert=[[UIAlertView alloc]initWithTitle:@"Server Error" message:@"Data could not be retrieved as UCE server is down." delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil, nil];
+    UIAlertView *alert=[[UIAlertView alloc]initWithTitle:@"Server Error" message:@"Data could not be retrieved as MobiCarz server is down." delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil, nil];
     [alert show];
     alert=nil;
     
@@ -1258,11 +1258,10 @@ finishedSavingWithError:(NSError *)error
 - (void)handleOperationError:(NSError *)error
 {
     
-    
     NSMutableDictionary *userInfo = [[NSMutableDictionary alloc]initWithCapacity:1];
     [userInfo setValue:@"Error in SelectedCarDetails" forKey:NSLocalizedDescriptionKey];
     
-    NSError *error2=[NSError errorWithDomain:@"UCE" code:[error code] userInfo:userInfo];
+    NSError *error2=[NSError errorWithDomain:@"MobiCarz" code:[error code] userInfo:userInfo];
     [self selectedCarDetailsOperationFailedMethod:error2];
     
 }
@@ -1273,7 +1272,7 @@ finishedSavingWithError:(NSError *)error
     NSMutableDictionary *userInfo = [[NSMutableDictionary alloc]initWithCapacity:1];
     [userInfo setValue:@"JSON error in SelectedCarDetails" forKey:NSLocalizedDescriptionKey];
     
-    NSError *error2=[NSError errorWithDomain:@"UCE" code:[error code] userInfo:userInfo];
+    NSError *error2=[NSError errorWithDomain:@"MobiCarz" code:[error code] userInfo:userInfo];
     [self selectedCarDetailsOperationFailedMethod:error2];
     
 }

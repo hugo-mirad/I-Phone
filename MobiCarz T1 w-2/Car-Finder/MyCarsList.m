@@ -559,7 +559,7 @@
     NSMutableDictionary *userInfo = [[NSMutableDictionary alloc]initWithCapacity:1];
     [userInfo setValue:@"Error in MyCarsList" forKey:NSLocalizedDescriptionKey];
     
-    NSError *error2=[NSError errorWithDomain:@"UCE" code:[error code] userInfo:userInfo];
+    NSError *error2=[NSError errorWithDomain:@"MobiCarz" code:[error code] userInfo:userInfo];
     [self callLogoutFailedMethod:error2];
     
 }
@@ -570,12 +570,12 @@
     NSMutableDictionary *userInfo = [[NSMutableDictionary alloc]initWithCapacity:1];
     [userInfo setValue:@"JSON error in MyCarsList" forKey:NSLocalizedDescriptionKey];
     
-    NSError *error2=[NSError errorWithDomain:@"UCE" code:[error code] userInfo:userInfo];
+    NSError *error2=[NSError errorWithDomain:@"MobiCarz" code:[error code] userInfo:userInfo];
     [self callLogoutFailedMethod:error2];
     
 }
 
-#pragma mark - UCE Image Download Delegate Methods
+#pragma mark - MobiCarz Image Download Delegate Methods
 - (void)downloadDidFinishDownloading:(CarRecord *)record forImage:(UIImage *)img forCar:(NSInteger)carNum
 {
     

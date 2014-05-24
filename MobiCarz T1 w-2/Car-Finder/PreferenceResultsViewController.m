@@ -918,7 +918,7 @@ static inline BOOL IsEmpty(id thing) {
     }
 }
 
-#pragma mark - UCE Image Download Delegate Methods
+#pragma mark - MobiCarz Image Download Delegate Methods
 
 - (void)downloadDidFinishDownloading:(CarRecord *)record forImage:(UIImage *)img forCar:(NSInteger)carNum
 {

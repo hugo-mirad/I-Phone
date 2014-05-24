@@ -183,6 +183,7 @@ static inline BOOL IsEmpty(id thing)
     self.titleTextField.autocorrectionType=UITextAutocorrectionTypeNo;
     self.titleTextField.keyboardType=UIKeyboardTypeAlphabet;
     self.titleTextField.returnKeyType=UIReturnKeyDone;
+    self.titleTextField.contentVerticalAlignment = UIControlContentVerticalAlignmentCenter;
     self.titleTextField.clearButtonMode=UITextFieldViewModeWhileEditing;
     //self.cityTextField.tag=1;
     self.titleTextField.delegate=self;

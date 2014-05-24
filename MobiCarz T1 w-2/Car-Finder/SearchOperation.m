@@ -107,7 +107,7 @@
     NSString *errorString=[NSString stringWithFormat:@"Connection Failed in SearchOperation with error: %@",[error localizedDescription]];
     [userInfo setValue:errorString forKey:NSLocalizedDescriptionKey];
     
-    NSError *error2=[NSError errorWithDomain:@"UCE" code:[error code] userInfo:userInfo];
+    NSError *error2=[NSError errorWithDomain:@"MobiCarz" code:[error code] userInfo:userInfo];
     
     [self callSearchOperationFailedMethod:error2];
 }
@@ -196,7 +196,7 @@
     NSMutableDictionary *userInfo = [[NSMutableDictionary alloc]initWithCapacity:1];
     [userInfo setValue:@"JSON error in SearchOperation" forKey:NSLocalizedDescriptionKey];
     
-    NSError *error2=[NSError errorWithDomain:@"UCE" code:[error code] userInfo:userInfo];
+    NSError *error2=[NSError errorWithDomain:@"MobiCarz" code:[error code] userInfo:userInfo];
     [self callSearchOperationFailedMethod:error2];
     
 }
@@ -208,7 +208,7 @@
     NSMutableDictionary *userInfo = [[NSMutableDictionary alloc]initWithCapacity:1];
     [userInfo setValue:@"DoesNotRespondToSelector in SearchOperation" forKey:NSLocalizedDescriptionKey];
     
-    NSError *error=[NSError errorWithDomain:@"UCE" code:404 userInfo:userInfo];
+    NSError *error=[NSError errorWithDomain:@"MobiCarz" code:404 userInfo:userInfo];
     
     [self callSearchOperationFailedMethod:error];
 }

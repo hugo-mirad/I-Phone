@@ -137,7 +137,7 @@
     
     
     self.uploadButton.backgroundColor = [UIColor colorWithRed:241.0f/255.0f green:240.0f/255.0f blue:240.0f/255.0f alpha:1.0f];
-    [self.uploadButton setTitle:@"UP LOAD" forState:UIControlStateNormal];
+    [self.uploadButton setTitle:@"UPLOAD" forState:UIControlStateNormal];
     [self.uploadButton setTitleColor:[UIColor colorWithRed:216.0f/255.0f green:74.0f/255.0f blue:73.0f/255.0f alpha:1.0f] forState:UIControlStateNormal];
     //Button with 0 border so it's shape like image shape
     self.uploadButton.layer.shadowRadius = 1.0f;
@@ -369,7 +369,7 @@
     NSMutableDictionary *userInfo = [[NSMutableDictionary alloc]initWithCapacity:1];
     [userInfo setValue:@"Error in CameraViewController" forKey:NSLocalizedDescriptionKey];
     
-    NSError *error2=[NSError errorWithDomain:@"UCE" code:[error code] userInfo:userInfo];
+    NSError *error2=[NSError errorWithDomain:@"MobiCarz" code:[error code] userInfo:userInfo];
     [self cameraOperationFailedMethod:error2];
     
 }

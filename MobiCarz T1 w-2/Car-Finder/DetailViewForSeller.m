@@ -796,7 +796,7 @@ static inline BOOL IsEmpty(id thing) {
 - (void)handleDoesNotRespondToSelectorError
 {
     
-    UIAlertView *alert=[[UIAlertView alloc]initWithTitle:@"Server Error" message:@"Data could not be retrieved as UCE server is down." delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil, nil];
+    UIAlertView *alert=[[UIAlertView alloc]initWithTitle:@"Server Error" message:@"Data could not be retrieved as MobiCarz server is down." delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil, nil];
     [alert show];
     alert=nil;
     
@@ -1118,7 +1118,7 @@ static inline BOOL IsEmpty(id thing) {
     labelStringForFindingWidth=[[NSString alloc] initWithFormat:@"%@ %@  ",@"Email:",fieldVal]; //add 2 extra space to be safe side. Other wise the edge is getting cut off.
     lWidth=[CommonMethods findLabelWidth:labelStringForFindingWidth];
     
-    label=[[UILabel alloc] initWithFrame:CGRectMake(10.0f, y, lWidth, 20.0f)];
+    label=[[UILabel alloc] initWithFrame:CGRectMake(10.0f, y, lWidth, 24.0f)];
     label.textAlignment=NSTextAlignmentLeft;
     [self createTwoTextLabel:label firstText:@"Email:" secondText:fieldVal];
     label.backgroundColor=[UIColor clearColor];
@@ -1150,7 +1150,7 @@ static inline BOOL IsEmpty(id thing) {
     labelStringForFindingWidth=[[NSString alloc] initWithFormat:@"%@ %@ ",@"Price:",priceVal]; //add 1 extra space to be safe side. Other wise the edge is getting cut off.
     lWidth=[CommonMethods findLabelWidth:labelStringForFindingWidth];
     
-    label=[[UILabel alloc] initWithFrame:CGRectMake(10.0f, y, lWidth, 20.0f)];
+    label=[[UILabel alloc] initWithFrame:CGRectMake(10.0f, y, lWidth, 24.0f)];
     label.textAlignment=NSTextAlignmentLeft;
     [self createTwoTextLabel:label firstText:@"Price:" secondText:priceVal];
     label.backgroundColor=[UIColor colorWithRed:0.792 green:0.788 blue:0.792 alpha:1.000];
@@ -1174,7 +1174,7 @@ static inline BOOL IsEmpty(id thing) {
     labelStringForFindingWidth=[[NSString alloc] initWithFormat:@"%@ %@ ",@"Seller Type:",fieldVal]; //add 1 extra space to be safe side. Other wise the edge is getting cut off.
     lWidth=[CommonMethods findLabelWidth:labelStringForFindingWidth];
     
-    label=[[UILabel alloc] initWithFrame:CGRectMake(10.0f, y, lWidth, 20.0f)];
+    label=[[UILabel alloc] initWithFrame:CGRectMake(10.0f, y, lWidth, 24.0f)];
     label.textAlignment=NSTextAlignmentLeft;
     [self createTwoTextLabel:label firstText:@"Seller Type:" secondText:fieldVal];
     label.backgroundColor=[UIColor colorWithRed:0.792 green:0.788 blue:0.792 alpha:1.000];
@@ -1198,7 +1198,7 @@ static inline BOOL IsEmpty(id thing) {
     labelStringForFindingWidth=[[NSString alloc] initWithFormat:@"%@  ",@"Phone:"]; //add 1 extra space to be safe side. Other wise the edge is getting cut off.
     lWidth=[CommonMethods findLabelWidth:labelStringForFindingWidth];
     
-    label=[[UILabel alloc] initWithFrame:CGRectMake(10.0f, y, lWidth, 20.0f)];
+    label=[[UILabel alloc] initWithFrame:CGRectMake(10.0f, y, lWidth, 24.0f)];
     label.textAlignment=NSTextAlignmentLeft;
     [self createTwoTextLabel:label firstText:@"Phone:" secondText:nil];
     label.backgroundColor=[UIColor clearColor];
@@ -1226,7 +1226,7 @@ static inline BOOL IsEmpty(id thing) {
     labelStringForFindingWidth=[[NSString alloc] initWithFormat:@"%@ ",fieldVal]; //add 1 extra space to be safe side. Other wise the edge is getting cut off.
     lWidth=[CommonMethods findLabelWidth:labelStringForFindingWidth];
     
-    label=[[UILabel alloc] initWithFrame:CGRectMake(10.0f+[CommonMethods findLabelWidth:@"Phone: "], y, lWidth, 20.0f)];
+    label=[[UILabel alloc] initWithFrame:CGRectMake(10.0f+[CommonMethods findLabelWidth:@"Phone: "], y, lWidth, 24.0f)];
     label.textAlignment=NSTextAlignmentLeft;
     [self createTwoTextLabel:label firstText:fieldVal secondText:nil];
     label.backgroundColor=[UIColor clearColor];
@@ -1272,7 +1272,7 @@ static inline BOOL IsEmpty(id thing) {
     labelStringForFindingWidth=[[NSString alloc] initWithFormat:@"%@ %@ ",@"Address:",fieldVal]; //add 1 extra space to be safe side. Other wise the edge is getting cut off.
     lWidth=[CommonMethods findLabelWidth:labelStringForFindingWidth];
     
-    label=[[UILabel alloc] initWithFrame:CGRectMake(10.0f, y, lWidth, 20.0f)];
+    label=[[UILabel alloc] initWithFrame:CGRectMake(10.0f, y, lWidth, 24.0f)];
     label.textAlignment=NSTextAlignmentLeft;
     [self createTwoTextLabel:label firstText:@"Address:" secondText:fieldVal];
     label.backgroundColor=[UIColor clearColor];
@@ -1293,7 +1293,7 @@ static inline BOOL IsEmpty(id thing) {
     labelStringForFindingWidth=[[NSString alloc] initWithFormat:@"%@ %@ ",@"Make:",fieldVal]; //add 1 extra space to be safe side. Other wise the edge is getting cut off.
     lWidth=[CommonMethods findLabelWidth:labelStringForFindingWidth];
     
-    label=[[UILabel alloc] initWithFrame:CGRectMake(10.0f, y, lWidth, 20.0f)];
+    label=[[UILabel alloc] initWithFrame:CGRectMake(10.0f, y, lWidth, 24.0f)];
     label.textAlignment=NSTextAlignmentLeft;
     [self createTwoTextLabel:label firstText:@"Make:" secondText:fieldVal];
     label.backgroundColor=[UIColor clearColor];
@@ -1309,7 +1309,7 @@ static inline BOOL IsEmpty(id thing) {
     labelStringForFindingWidth=[[NSString alloc] initWithFormat:@"%@ %@ ",@"Model:",fieldVal]; //add 1 extra space to be safe side. Other wise the edge is getting cut off.
     lWidth=[CommonMethods findLabelWidth:labelStringForFindingWidth];
     
-    label=[[UILabel alloc] initWithFrame:CGRectMake(10.0f, y, lWidth, 20.0f)];
+    label=[[UILabel alloc] initWithFrame:CGRectMake(10.0f, y, lWidth, 24.0f)];
     label.textAlignment=NSTextAlignmentLeft;
     [self createTwoTextLabel:label firstText:@"Model:" secondText:fieldVal];
     label.backgroundColor=[UIColor clearColor];
@@ -1326,7 +1326,7 @@ static inline BOOL IsEmpty(id thing) {
     labelStringForFindingWidth=[[NSString alloc] initWithFormat:@"%@ %@ ",@"Year:",fieldVal]; //add 1 extra space to be safe side. Other wise the edge is getting cut off.
     lWidth=[CommonMethods findLabelWidth:labelStringForFindingWidth];
     
-    label=[[UILabel alloc] initWithFrame:CGRectMake(10.0f, y, lWidth, 20.0f)];
+    label=[[UILabel alloc] initWithFrame:CGRectMake(10.0f, y, lWidth, 24.0f)];
     label.textAlignment=NSTextAlignmentLeft;
     [self createTwoTextLabel:label firstText:@"Year:" secondText:fieldVal];
     label.backgroundColor=[UIColor clearColor];
@@ -1342,7 +1342,7 @@ static inline BOOL IsEmpty(id thing) {
     labelStringForFindingWidth=[[NSString alloc] initWithFormat:@"%@ %@ ",@"Exterior Color:",fieldVal]; //add 1 extra space to be safe side. Other wise the edge is getting cut off.
     lWidth=[CommonMethods findLabelWidth:labelStringForFindingWidth];
     
-    label=[[UILabel alloc] initWithFrame:CGRectMake(10.0f, y, lWidth, 20.0f)];
+    label=[[UILabel alloc] initWithFrame:CGRectMake(10.0f, y, lWidth, 24.0f)];
     label.textAlignment=NSTextAlignmentLeft;
     [self createTwoTextLabel:label firstText:@"Exterior Color:" secondText:fieldVal];
     label.backgroundColor=[UIColor clearColor];
@@ -1357,7 +1357,7 @@ static inline BOOL IsEmpty(id thing) {
     labelStringForFindingWidth=[[NSString alloc] initWithFormat:@"%@ %@ ",@"Interior Color:",fieldVal]; //add 1 extra space to be safe side. Other wise the edge is getting cut off.
     lWidth=[CommonMethods findLabelWidth:labelStringForFindingWidth];
     
-    label=[[UILabel alloc] initWithFrame:CGRectMake(10.0f, y, lWidth, 20.0f)];
+    label=[[UILabel alloc] initWithFrame:CGRectMake(10.0f, y, lWidth, 24.0f)];
     label.textAlignment=NSTextAlignmentLeft;
     [self createTwoTextLabel:label firstText:@"Interior Color:" secondText:fieldVal];
     label.backgroundColor=[UIColor clearColor];
@@ -1375,7 +1375,7 @@ static inline BOOL IsEmpty(id thing) {
     labelStringForFindingWidth=[[NSString alloc] initWithFormat:@"%@ %@ ",@"Number Of Doors:",fieldVal]; //add 1 extra space to be safe side. Other wise the edge is getting cut off.
     lWidth=[CommonMethods findLabelWidth:labelStringForFindingWidth];
     
-    label=[[UILabel alloc] initWithFrame:CGRectMake(10.0f, y, lWidth, 20.0f)];
+    label=[[UILabel alloc] initWithFrame:CGRectMake(10.0f, y, lWidth, 24.0f)];
     label.textAlignment=NSTextAlignmentLeft;
     [self createTwoTextLabel:label firstText:@"Number Of Doors:" secondText:fieldVal];
     label.backgroundColor=[UIColor clearColor];
@@ -1391,7 +1391,7 @@ static inline BOOL IsEmpty(id thing) {
     labelStringForFindingWidth=[[NSString alloc] initWithFormat:@"%@ %@ ",@"Vehicle Condition:",fieldVal]; //add 1 extra space to be safe side. Other wise the edge is getting cut off.
     lWidth=[CommonMethods findLabelWidth:labelStringForFindingWidth];
     
-    label=[[UILabel alloc] initWithFrame:CGRectMake(10.0f, y, lWidth, 20.0f)];
+    label=[[UILabel alloc] initWithFrame:CGRectMake(10.0f, y, lWidth, 24.0f)];
     label.textAlignment=NSTextAlignmentLeft;
     [self createTwoTextLabel:label firstText:@"Vehicle Condition:" secondText:fieldVal];
     label.backgroundColor=[UIColor clearColor];
@@ -1418,7 +1418,7 @@ static inline BOOL IsEmpty(id thing) {
     labelStringForFindingWidth=[[NSString alloc] initWithFormat:@"%@ %@ ",@"Mileage:",fieldVal]; //add 1 extra space to be safe side. Other wise the edge is getting cut off.
     lWidth=[CommonMethods findLabelWidth:labelStringForFindingWidth];
     
-    label=[[UILabel alloc] initWithFrame:CGRectMake(10.0f, y, lWidth, 20.0f)];
+    label=[[UILabel alloc] initWithFrame:CGRectMake(10.0f, y, lWidth, 24.0f)];
     label.textAlignment=NSTextAlignmentLeft;
     [self createTwoTextLabel:label firstText:@"Mileage:" secondText:fieldVal];
     label.backgroundColor=[UIColor clearColor];
@@ -1442,7 +1442,7 @@ static inline BOOL IsEmpty(id thing) {
     labelStringForFindingWidth=[[NSString alloc] initWithFormat:@"%@ %@ ",@"Fuel:",fieldVal]; //add 1 extra space to be safe side. Other wise the edge is getting cut off.
     lWidth=[CommonMethods findLabelWidth:labelStringForFindingWidth];
     
-    label=[[UILabel alloc] initWithFrame:CGRectMake(10.0f, y, lWidth, 20.0f)];
+    label=[[UILabel alloc] initWithFrame:CGRectMake(10.0f, y, lWidth, 24.0f)];
     label.textAlignment=NSTextAlignmentLeft;
     [self createTwoTextLabel:label firstText:@"Fuel:" secondText:fieldVal];
     label.backgroundColor=[UIColor clearColor];
@@ -1459,7 +1459,7 @@ static inline BOOL IsEmpty(id thing) {
     labelStringForFindingWidth=[[NSString alloc] initWithFormat:@"%@ %@ ",@"Transmission:",fieldVal]; //add 1 extra space to be safe side. Other wise the edge is getting cut off.
     lWidth=[CommonMethods findLabelWidth:labelStringForFindingWidth];
     
-    label=[[UILabel alloc] initWithFrame:CGRectMake(10.0f, y, lWidth, 20.0f)];
+    label=[[UILabel alloc] initWithFrame:CGRectMake(10.0f, y, lWidth, 24.0f)];
     label.textAlignment=NSTextAlignmentLeft;
     [self createTwoTextLabel:label firstText:@"Transmission:" secondText:fieldVal];
     label.backgroundColor=[UIColor clearColor];
@@ -1477,7 +1477,7 @@ static inline BOOL IsEmpty(id thing) {
     labelStringForFindingWidth=[[NSString alloc] initWithFormat:@"%@ %@  ",@"Drive Train:",fieldVal]; //add 2 extra space to be safe side. Other wise the edge is getting cut off.
     lWidth=[CommonMethods findLabelWidth:labelStringForFindingWidth];
     
-    label=[[UILabel alloc] initWithFrame:CGRectMake(10.0f, y, lWidth, 20.0f)];
+    label=[[UILabel alloc] initWithFrame:CGRectMake(10.0f, y, lWidth, 24.0f)];
     label.textAlignment=NSTextAlignmentLeft;
     [self createTwoTextLabel:label firstText:@"Drive Train:" secondText:fieldVal];
     label.backgroundColor=[UIColor clearColor];
@@ -1494,7 +1494,7 @@ static inline BOOL IsEmpty(id thing) {
     labelStringForFindingWidth=[[NSString alloc] initWithFormat:@"%@ %@  ",@"Engine Cylinders:",fieldVal]; //add 2 extra space to be safe side. Other wise the edge is getting cut off.
     lWidth=[CommonMethods findLabelWidth:labelStringForFindingWidth];
     
-    label=[[UILabel alloc] initWithFrame:CGRectMake(10.0f, y, lWidth, 20.0f)];
+    label=[[UILabel alloc] initWithFrame:CGRectMake(10.0f, y, lWidth, 24.0f)];
     label.textAlignment=NSTextAlignmentLeft;
     [self createTwoTextLabel:label firstText:@"Engine Cylinders:" secondText:fieldVal];
     label.backgroundColor=[UIColor clearColor];
@@ -1511,7 +1511,7 @@ static inline BOOL IsEmpty(id thing) {
     labelStringForFindingWidth=[[NSString alloc] initWithFormat:@"%@ %@  ",@"VIN:",fieldVal]; //add 2 extra space to be safe side. Other wise the edge is getting cut off.
     lWidth=[CommonMethods findLabelWidth:labelStringForFindingWidth];
     
-    label=[[UILabel alloc] initWithFrame:CGRectMake(10.0f, y, lWidth, 20.0f)];
+    label=[[UILabel alloc] initWithFrame:CGRectMake(10.0f, y, lWidth, 24.0f)];
     label.textAlignment=NSTextAlignmentLeft;
     [self createTwoTextLabel:label firstText:@"VIN:" secondText:fieldVal];
     label.backgroundColor=[UIColor clearColor];
@@ -1546,7 +1546,7 @@ static inline BOOL IsEmpty(id thing) {
     if(orientation == UIDeviceOrientationPortrait)
     {
         
-        frame = CGRectMake(10.0f, y, self.view.frame.size.width-10, descLabelHeight);
+        frame = CGRectMake(10.0f, y+30, self.view.frame.size.width-10, descLabelHeight);
     }
     else
     {

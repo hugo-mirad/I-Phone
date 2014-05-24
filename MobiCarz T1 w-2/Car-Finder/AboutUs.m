@@ -273,7 +273,7 @@
 - (void)phoneLblTapped:(id)sender
 {
     //see if the device can actually make a call
-    NSString *phonenum=[NSString stringWithFormat:@"tel://+18887868307"];
+    NSString *phonenum=[NSString stringWithFormat:@"tel://+18884656693"];
     if([self canDevicePlaceAPhoneCall])
     {
         [[UIApplication sharedApplication] openURL:[NSURL URLWithString:phonenum]];
@@ -281,7 +281,7 @@
     
     else
     {
-        NSString *msg=[NSString stringWithFormat:@"This device cannot place a call now. Use another phone to call UCE at 888-786-8307."];
+        NSString *msg=[NSString stringWithFormat:@"This device cannot place a call now. Use another phone to call MobiCarz at 888-465-6693."];
         
         UIAlertView *alert=[[UIAlertView alloc]initWithTitle:@"Device Cannot Call Now" message:msg delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil, nil];
         [alert show];

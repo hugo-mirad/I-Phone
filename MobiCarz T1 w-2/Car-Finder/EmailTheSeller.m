@@ -172,7 +172,7 @@ static inline BOOL IsEmpty(id thing) {
     self.fNameTextField=[[UITextField alloc] initWithFrame:CGRectMake(20, 50, 280, 31)];
     self.fNameTextField.backgroundColor=[UIColor clearColor];
     self.fNameTextField.borderStyle = UITextBorderStyleRoundedRect;
-    self.fNameTextField.font = [UIFont systemFontOfSize:15];
+    self.fNameTextField.font = [UIFont systemFontOfSize:13];
     self.fNameTextField.placeholder = @"First Name";
     self.fNameTextField.textAlignment=NSTextAlignmentLeft;
     self.fNameTextField.textColor=[UIColor blackColor];
@@ -196,7 +196,7 @@ static inline BOOL IsEmpty(id thing) {
     self.lNameTextField=[[UITextField alloc] initWithFrame:CGRectMake(20, 120, 280, 31)];
     self.lNameTextField.backgroundColor=[UIColor clearColor];
     self.lNameTextField.borderStyle = UITextBorderStyleRoundedRect;
-    self.lNameTextField.font = [UIFont systemFontOfSize:15];
+    self.lNameTextField.font = [UIFont systemFontOfSize:13];
     self.lNameTextField.placeholder = @"Last Name";
     self.lNameTextField.textAlignment=NSTextAlignmentLeft;
     self.lNameTextField.textColor=[UIColor blackColor];
@@ -220,7 +220,7 @@ static inline BOOL IsEmpty(id thing) {
     self.phoneTextField=[[UITextField alloc] initWithFrame:CGRectMake(20, 190, 280, 31)];
     self.phoneTextField.backgroundColor=[UIColor clearColor];
     self.phoneTextField.borderStyle = UITextBorderStyleRoundedRect;
-    self.phoneTextField.font = [UIFont systemFontOfSize:15];
+    self.phoneTextField.font = [UIFont systemFontOfSize:13];
     self.phoneTextField.placeholder = @"Enter your Phone Number *";
     self.phoneTextField.textAlignment=NSTextAlignmentLeft;
     self.phoneTextField.textColor=[UIColor blackColor];
@@ -243,7 +243,7 @@ static inline BOOL IsEmpty(id thing) {
         self.cityTextField=[[UITextField alloc] initWithFrame:CGRectMake(20, 260, 280, 31)];
         self.cityTextField.backgroundColor=[UIColor clearColor];
         self.cityTextField.borderStyle = UITextBorderStyleRoundedRect;
-        self.cityTextField.font = [UIFont systemFontOfSize:15];
+        self.cityTextField.font = [UIFont systemFontOfSize:13];
         self.cityTextField.placeholder = @"Enter your City";
         self.cityTextField.textAlignment=NSTextAlignmentLeft;
         self.cityTextField.textColor=[UIColor blackColor];
@@ -268,7 +268,7 @@ static inline BOOL IsEmpty(id thing) {
         self.emailTextField=[[UITextField alloc] initWithFrame:CGRectMake(20, 330, 280, 31)];
         self.emailTextField.backgroundColor=[UIColor clearColor];
         self.emailTextField.borderStyle = UITextBorderStyleRoundedRect;
-        self.emailTextField.font = [UIFont systemFontOfSize:15];
+        self.emailTextField.font = [UIFont systemFontOfSize:13];
         self.emailTextField.placeholder = @"Enter your Email Id";
         self.emailTextField.textAlignment=NSTextAlignmentLeft;
         self.emailTextField.textColor=[UIColor blackColor];
@@ -295,7 +295,7 @@ static inline BOOL IsEmpty(id thing) {
         self.msgTextField=[[UITextView alloc] initWithFrame:CGRectMake(20, 410, 280, 100)];
         self.msgTextField.backgroundColor=[UIColor clearColor];
         //self.msgTextField.borderStyle = UITextBorderStyleRoundedRect;
-        self.msgTextField.font = [UIFont systemFontOfSize:15];
+        self.msgTextField.font = [UIFont systemFontOfSize:13];
         //self.msgTextField.text = @"Message";
         self.msgTextField.textAlignment=NSTextAlignmentLeft;
         self.msgTextField.textColor=[UIColor blackColor];
@@ -376,7 +376,7 @@ static inline BOOL IsEmpty(id thing) {
         self.fNameTextField=[[UITextField alloc] initWithFrame:CGRectMake(150, 50, 280, 31)];
         self.fNameTextField.backgroundColor=[UIColor whiteColor];
         self.fNameTextField.borderStyle = UITextBorderStyleRoundedRect;
-        self.fNameTextField.font = [UIFont systemFontOfSize:15];
+        self.fNameTextField.font = [UIFont systemFontOfSize:13];
         self.fNameTextField.placeholder = @"First Name";
         self.fNameTextField.textAlignment=NSTextAlignmentLeft;
         self.fNameTextField.textColor=[UIColor blackColor];
@@ -400,7 +400,7 @@ static inline BOOL IsEmpty(id thing) {
         self.lNameTextField=[[UITextField alloc] initWithFrame:CGRectMake(150, 120, 280, 31)];
         self.lNameTextField.backgroundColor=[UIColor whiteColor];
         self.lNameTextField.borderStyle = UITextBorderStyleRoundedRect;
-        self.lNameTextField.font = [UIFont systemFontOfSize:15];
+        self.lNameTextField.font = [UIFont systemFontOfSize:13];
         self.lNameTextField.placeholder = @"Last Name";
         self.lNameTextField.textAlignment=NSTextAlignmentLeft;
         self.lNameTextField.textColor=[UIColor blackColor];
@@ -424,7 +424,7 @@ static inline BOOL IsEmpty(id thing) {
         self.phoneTextField=[[UITextField alloc] initWithFrame:CGRectMake(150, 190, 280, 31)];
         self.phoneTextField.backgroundColor=[UIColor whiteColor];
         self.phoneTextField.borderStyle = UITextBorderStyleRoundedRect;
-        self.phoneTextField.font = [UIFont systemFontOfSize:15];
+        self.phoneTextField.font = [UIFont systemFontOfSize:13];
         self.phoneTextField.placeholder = @"Enter your Phone Number *";
         self.phoneTextField.textAlignment=NSTextAlignmentLeft;
         self.phoneTextField.textColor=[UIColor blackColor];
@@ -447,7 +447,7 @@ static inline BOOL IsEmpty(id thing) {
         self.cityTextField=[[UITextField alloc] initWithFrame:CGRectMake(150, 260, 280, 31)];
         self.cityTextField.backgroundColor=[UIColor whiteColor];
         self.cityTextField.borderStyle = UITextBorderStyleRoundedRect;
-        self.cityTextField.font = [UIFont systemFontOfSize:15];
+        self.cityTextField.font = [UIFont systemFontOfSize:13];
         self.cityTextField.placeholder = @"Enter your City";
         self.cityTextField.textAlignment=NSTextAlignmentLeft;
         self.cityTextField.textColor=[UIColor blackColor];
@@ -472,7 +472,7 @@ static inline BOOL IsEmpty(id thing) {
         self.emailTextField=[[UITextField alloc] initWithFrame:CGRectMake(150, 330, 280, 31)];
         self.emailTextField.backgroundColor=[UIColor whiteColor];
         self.emailTextField.borderStyle = UITextBorderStyleRoundedRect;
-        self.emailTextField.font = [UIFont systemFontOfSize:15];
+        self.emailTextField.font = [UIFont systemFontOfSize:13];
         self.emailTextField.placeholder = @"Enter your Email Id";
         self.emailTextField.textAlignment=NSTextAlignmentLeft;
         self.emailTextField.textColor=[UIColor blackColor];
@@ -499,7 +499,7 @@ static inline BOOL IsEmpty(id thing) {
         self.msgTextField=[[UITextView alloc] initWithFrame:CGRectMake(150, 410, 280, 100)];
         self.msgTextField.backgroundColor=[UIColor whiteColor];
         //self.msgTextField.borderStyle = UITextBorderStyleRoundedRect;
-        self.msgTextField.font = [UIFont systemFontOfSize:15];
+        self.msgTextField.font = [UIFont systemFontOfSize:13];
         //self.msgTextField.text = @"Message";
         self.msgTextField.textAlignment=NSTextAlignmentLeft;
         self.msgTextField.textColor=[UIColor blackColor];
@@ -897,7 +897,7 @@ static inline BOOL IsEmpty(id thing) {
     
     if([error code]==kCFURLErrorNotConnectedToInternet)
     {
-        self.emailSentAlert=[[UIAlertView alloc]initWithTitle:@"No Internet Connection" message:@"UCE could not send email as it is not connected to the Internet." delegate:self cancelButtonTitle:@"OK" otherButtonTitles:nil, nil];
+        self.emailSentAlert=[[UIAlertView alloc]initWithTitle:@"No Internet Connection" message:@"MobiCarz could not send email as it is not connected to the Internet." delegate:self cancelButtonTitle:@"OK" otherButtonTitles:nil, nil];
         [self.emailSentAlert show];
     }
     else if([error code]==-1001)
@@ -908,7 +908,7 @@ static inline BOOL IsEmpty(id thing) {
     }
     else
     {
-        self.emailSentAlert=[[UIAlertView alloc]initWithTitle:@"Email Service Failed" message:@"UCE could not connect to mail server." delegate:self cancelButtonTitle:@"OK" otherButtonTitles:nil, nil];
+        self.emailSentAlert=[[UIAlertView alloc]initWithTitle:@"Email Service Failed" message:@"MobiCarz could not connect to mail server." delegate:self cancelButtonTitle:@"OK" otherButtonTitles:nil, nil];
       //  [self.emailSentAlert show];
     }
 }

@@ -191,7 +191,9 @@ static inline BOOL IsEmpty(id thing)
     self.titleTextField.borderStyle = UITextBorderStyleRoundedRect;
     self.titleTextField.backgroundColor = [UIColor clearColor];
     self.titleTextField.returnKeyType=UIReturnKeyDone;
+    self.titleTextField.font = [UIFont systemFontOfSize:13];
     self.titleTextField.autocorrectionType=UITextAutocorrectionTypeNo;
+    self.titleTextField.contentVerticalAlignment = UIControlContentVerticalAlignmentCenter;
     self.titleTextField.tag=1;
     self.titleTextField.delegate = self;
     [contentView addSubview:self.titleTextField];
@@ -214,7 +216,9 @@ static inline BOOL IsEmpty(id thing)
     self.askPriceTextField.placeholder = @"Enter Asking Pricer";
     self.askPriceTextField.borderStyle = UITextBorderStyleRoundedRect;
     self.askPriceTextField.backgroundColor = [UIColor clearColor];
+    self.askPriceTextField.font = [UIFont systemFontOfSize:13];
     self.askPriceTextField.keyboardType=UIKeyboardTypeNumberPad;
+    self.askPriceTextField.contentVerticalAlignment = UIControlContentVerticalAlignmentCenter;
     self.askPriceTextField.tag=2;
     [contentView addSubview:self.askPriceTextField];
     
@@ -233,7 +237,9 @@ static inline BOOL IsEmpty(id thing)
     self.mileageTextField.placeholder = @"Enter Mileage";
     self.mileageTextField.borderStyle = UITextBorderStyleRoundedRect;
     self.mileageTextField.backgroundColor = [UIColor clearColor];
+    self.mileageTextField.font = [UIFont systemFontOfSize:13];
     self.mileageTextField.keyboardType=UIKeyboardTypeNumberPad;
+    self.mileageTextField.contentVerticalAlignment = UIControlContentVerticalAlignmentCenter;
     self.mileageTextField.tag=3;
     [contentView addSubview:self.mileageTextField];
     
@@ -255,7 +261,9 @@ static inline BOOL IsEmpty(id thing)
     self.exteriorColorTextField.placeholder = @"Pick Exterior Color";
     self.exteriorColorTextField.tag = 4;
     self.exteriorColorTextField.borderStyle = UITextBorderStyleRoundedRect;
+    self.exteriorColorTextField.font = [UIFont systemFontOfSize:13];
     self.exteriorColorTextField.backgroundColor = [UIColor clearColor];
+    self.exteriorColorTextField.contentVerticalAlignment = UIControlContentVerticalAlignmentCenter;
     [contentView addSubview:self.exteriorColorTextField];
     
     
@@ -303,7 +311,9 @@ static inline BOOL IsEmpty(id thing)
     self.interiorColorTextField.placeholder = @"Pick Exterior Color";
     self.interiorColorTextField.tag = 5;
     self.interiorColorTextField.borderStyle = UITextBorderStyleRoundedRect;
+    self.interiorColorTextField.font = [UIFont systemFontOfSize:13];
     self.interiorColorTextField.backgroundColor = [UIColor clearColor];
+    self.interiorColorTextField.contentVerticalAlignment = UIControlContentVerticalAlignmentCenter;
     [contentView addSubview:self.interiorColorTextField];
     
     self.interiorColorTextField.delegate = self;
@@ -356,6 +366,8 @@ static inline BOOL IsEmpty(id thing)
     self.transmissionTextField.tag = 6;
     self.transmissionTextField.borderStyle = UITextBorderStyleRoundedRect;
     self.transmissionTextField.backgroundColor = [UIColor clearColor];
+    self.transmissionTextField.font = [UIFont systemFontOfSize:13];
+    self.transmissionTextField.contentVerticalAlignment = UIControlContentVerticalAlignmentCenter;
     [contentView addSubview:self.transmissionTextField];
     
     
@@ -415,6 +427,8 @@ static inline BOOL IsEmpty(id thing)
     self.conditionTextField.tag = 7;
     self.conditionTextField.borderStyle = UITextBorderStyleRoundedRect;
     self.conditionTextField.backgroundColor = [UIColor clearColor];
+    self.conditionTextField.contentVerticalAlignment = UIControlContentVerticalAlignmentCenter;
+    self.conditionTextField.font = [UIFont systemFontOfSize:13];
     [contentView addSubview:self.conditionTextField];
     
     
@@ -468,6 +482,8 @@ static inline BOOL IsEmpty(id thing)
     self.driveTrainTextField.tag = 8;
     self.driveTrainTextField.borderStyle = UITextBorderStyleRoundedRect;
     self.driveTrainTextField.backgroundColor = [UIColor clearColor];
+    self.driveTrainTextField.contentVerticalAlignment = UIControlContentVerticalAlignmentCenter;
+    self.driveTrainTextField.font = [UIFont systemFontOfSize:13];
     [contentView addSubview:self.driveTrainTextField];
     
     
@@ -530,6 +546,8 @@ static inline BOOL IsEmpty(id thing)
     self.engineCylindersTextField.tag = 9;
     self.engineCylindersTextField.borderStyle = UITextBorderStyleRoundedRect;
     self.engineCylindersTextField.backgroundColor = [UIColor clearColor];
+    self.engineCylindersTextField.contentVerticalAlignment = UIControlContentVerticalAlignmentCenter;
+    self.engineCylindersTextField.font = [UIFont systemFontOfSize:13];
     [contentView addSubview:self.engineCylindersTextField];
     
     
@@ -586,6 +604,8 @@ static inline BOOL IsEmpty(id thing)
     self.doorsTextField.tag = 10;
     self.doorsTextField.borderStyle = UITextBorderStyleRoundedRect;
     self.doorsTextField.backgroundColor = [UIColor clearColor];
+    self.doorsTextField.contentVerticalAlignment = UIControlContentVerticalAlignmentCenter;
+    self.doorsTextField.font = [UIFont systemFontOfSize:13];
     [contentView addSubview:self.doorsTextField];
     
     
@@ -644,6 +664,8 @@ static inline BOOL IsEmpty(id thing)
     self.fuelTypeTextField.tag = 11;
     self.fuelTypeTextField.borderStyle = UITextBorderStyleRoundedRect;
     self.fuelTypeTextField.backgroundColor = [UIColor clearColor];
+    self.fuelTypeTextField.contentVerticalAlignment = UIControlContentVerticalAlignmentCenter;
+    self.fuelTypeTextField.font = [UIFont systemFontOfSize:13];
     [contentView addSubview:self.fuelTypeTextField];
     
     
@@ -701,7 +723,9 @@ static inline BOOL IsEmpty(id thing)
     self.vinTextField.backgroundColor = [UIColor clearColor];
     self.vinTextField.returnKeyType=UIReturnKeyDone;
     self.vinTextField.autocorrectionType=UITextAutocorrectionTypeNo;
+    self.vinTextField.font = [UIFont systemFontOfSize:13];
     self.vinTextField.delegate=self;
+    self.vinTextField.contentVerticalAlignment = UIControlContentVerticalAlignmentCenter;
     self.vinTextField.tag=12;
     [contentView addSubview:self.vinTextField];
     
@@ -1768,7 +1792,7 @@ static inline BOOL IsEmpty(id thing)
 -(BOOL)textFieldShouldBeginEditing:(UITextField *)textField
 
 {
-    
+    textField.contentVerticalAlignment = UIControlContentVerticalAlignmentCenter;
     if ([textField isEqual:self.exteriorColorTextField]) {
         self.exteriorColorPicker.showsSelectionIndicator = YES;
         self.exteriorColorTextField.inputView = self.exteriorColorPicker;
